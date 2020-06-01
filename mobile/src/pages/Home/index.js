@@ -3,14 +3,17 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Carrosel from '../../components/Carousel';
 import Header from '../../components/Header';
 import Constants from 'expo-constants';
-import { Entypo } from '@expo/vector-icons';
+import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
+  const navigation = useNavigation();
   return (
   <>
     <View style={{backgroundColor: '#051A77'
                 , flex:1
-                , paddingTop: Constants.statusBarHeight + 20}}>
+                , paddingTop: Constants.statusBarHeight + 20
+                , position: 'relative'}}>
       
       <View style={styles.container}>
         <Header/>
@@ -32,6 +35,9 @@ const Home = () => {
           <Entypo name="arrow-with-circle-right" size={30} color="rgba(15, 51, 119, 1)" />
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={{position:'absolute', bottom: 35, right: 35}} onPress={()=> {navigation.navigate('Chat')}}>
+        <MaterialCommunityIcons name="wechat" size={60} color="rgba(15, 51, 119, 1)" />
+      </TouchableOpacity>
     </View>
   </>
   );}
