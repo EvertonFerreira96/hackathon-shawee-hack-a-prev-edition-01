@@ -17,17 +17,17 @@ const Home = () => {
         <Carrosel
         items={[1,2,3]}
         />
-        <TouchableOpacity style={{backgroundColor: '#FFF',padding:30, flexDirection:'row', width:'100%',margin:15,}}>
+        <TouchableOpacity style={{backgroundColor: '#FFF',padding:30, flexDirection:'row',justifyContent:'space-between', width:'100%',margin:15,}}>
           <View style={{}}>
             <Text style={{color:'rgba(15, 51, 119, 1)', fontSize: 20, fontWeight:'700',paddingBottom:10,}}>Criar novo investimento</Text>
             <Text style={{color:'rgba(165, 165, 165, 1)', fontSize: 10}}>Descubra outros investimentos disponíveis para o seu formato de carteira.</Text>
           </View>
           <Entypo name="arrow-with-circle-right" size={30} color="rgba(15, 51, 119, 1)" />
         </TouchableOpacity>
-        <TouchableOpacity style={{backgroundColor: '#FFF',padding:30, flexDirection:'row', width:'100%',margin:15,}}>
+        <TouchableOpacity style={{backgroundColor: '#FFF',padding:30, flexDirection:'row',justifyContent:'space-between', width:'100%',margin:15,}}>
           <View style={{}}>
             <Text style={{color:'rgba(15, 51, 119, 1)', fontSize: 20, fontWeight:'700',paddingBottom:10,}}>Portabilidade de carteira</Text>
-            <Text style={{color:'rgba(165, 165, 165, 1)', fontSize: 10}}>Quer trazer uma carteira de investimento para a plataforma, veja as possibilidades.</Text>
+            <Text style={{color:'rgba(165, 165, 165, 1)', fontSize: 10}}>Quer trazer uma carteira de investimento?</Text>
           </View>
           <Entypo name="arrow-with-circle-right" size={30} color="rgba(15, 51, 119, 1)" />
         </TouchableOpacity>
